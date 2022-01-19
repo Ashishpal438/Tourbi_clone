@@ -1,0 +1,23 @@
+/* universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* contact-title */
+#contact-title {
+  background-color: #00c0ff;
+  height: 525px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#contact-title > h2 {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: white;
+}
