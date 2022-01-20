@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="CSS/blog.css">
+
     <title>Blog</title>
 </head>
 
@@ -258,9 +259,86 @@
 
     </aside>
 
+    <footer id="footer_part">
+        <section id="footer_section">
+            <div id="parent_footer1">
+                <h2 class="fotter_heading">About Agency</h2>
+                <p class="fotter_para">The World has become so fast paced that people don't want to stand by reading a
+                    page of information, they would much rather look at a presentation and understand the message.It has
+                    come to a point where images. </p>
+            </div>
+            <div id="parent_footer2">
+                <h2 class="fotter_heading">Navigation Links</h2>
+                <div id="links_fotterdiv">
+                    <a href="">Home</a>
+                    <a href="">team</a>
+                    <a href="">Features</a>
+                    <a href="">Pricing</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div id="parent_footer3">
+                <h2 class="fotter_heading">Newsletter</h2>
+                <p class="fotter_para">Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold
+                    bearing days open</p>
+                <div><input type="email" name="" id="email" placeholder="Email Address"><button type="submit"
+                        id="button_submit_footer"><span><i class="far fa-paper-plane fa-1x"></i></span></button></div>
+                <p id="submitting"></p>
+            </div>
+            <div id="parent_footer4">
+                <h2 class="fotter_heading">Instafeed</h2>
+                <div id="img_fotterdiv">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_1.png.pagespeed.ic.pKJOiF18o9.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_2.png.pagespeed.ic.9y9oc3nf7h.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_3.png.pagespeed.ic.tpLB1vMRwU.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_4.png.pagespeed.ic.rQv_K-VUpf.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_5.png.pagespeed.ic.pUDQA0kQXP.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_6.png.pagespeed.ic.7tdWmNvV2S.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_7.png.pagespeed.ic.3McTHMBc3m.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_8.png.pagespeed.ic.hD22gB6aTo.webp"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <hr style="margin-top: 2em;">
+        <div id="end_div_footer">
+            <p id="fotter_para">Copyright ©2022 All rights reserved | This template is made with <a
+                    style="color: #7a7a7a;" href=""><i class="far fa-heart"></i></a>
+                < by <a id="colirib_a" href="">Colorib</a>
+            </p>
+            <div id="fab_icon_footer">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fas fa-globe"></i></a>
+                <a href=""><i class="fab fa-behance"></i></a>
+            </div>
+
+        </div>
+
+
+    </footer>
 
 </body>
+<script src="https://kit.fontawesome.com/1166b63301.js" crossorigin="anonymous"></script>
 <script>
+    var button = document.getElementById("button_submit_footer").addEventListener("click", submit_mail)
+
+    function submit_mail() {
+        var p = document.querySelector("#submitting")
+        p.textContent = "Submitting";
+        p.style.color = "red"
+    }
+
     const btn = document.getElementById('menu-btn')
     const nav = document.getElementById('menu')
 
