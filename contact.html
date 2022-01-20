@@ -14,6 +14,65 @@
 </head>
 
 <body>
+    <nav class="navbar">
+
+        <!-- logo  -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="./Assets/logo.webp" alt="">
+            </a>
+        </div>
+
+        <!-- middle links -->
+
+        <ul class="flex hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="packages.html">Packages</a></li>
+
+            <li class="dropdown">
+                <a href="blog.html">Blog &blacktriangledown;</a>
+            </li>
+
+            <li id="nav_menu_pages"><a href="elements.html"> Pages &blacktriangledown;</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- right button -->
+
+        <div class="hide">
+            <button id="btn">Hot Line 052</button>
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu hidden" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Packages</a></li>
+
+                <li class="dropdown">
+                    <a href="">Blog &blacktriangledown;</a>
+                </li>
+
+                <li id="nav_menu_pages"><a href=""> Pages &blacktriangledown;</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
     <!-- Contact-title -->
     <section id="contact-title">
         <h2>Contact</h2>
@@ -68,5 +127,18 @@
     </aside>
     <br><br><br>
 </body>
+
+<script>
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    function navToggle() {
+        btn.classList.toggle('open')
+        nav.classList.toggle('hidden')
+        document.body.classList.toggle('no-scroll')
+    }
+
+    btn.addEventListener('click', navToggle)
+</script>
 
 </html>
