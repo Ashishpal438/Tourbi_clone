@@ -1,13 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+
+    <!-- -------------------------------------------------- NAVBAR ---------------------------------------------------------- -->
+     <!-- -------------------------------------------------- NAVBAR ---------------------------------------------------------- -->
+
+
+    <nav class="navbar">
+
+      <!-- logo  -->
+      <div id="logo">
+         <a href="index.html">
+         <img src="./Assets/logo.webp" alt="">
+        </a>
+      </div>
+
+      <!-- middle links -->
+
+      <ul class="flex hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Packages</a></li>
+
+        <li class="dropdown">
+          <a href="">Blog &blacktriangledown;</a>
+        </li>
+
+        <li id="nav_menu_pages"><a href=""> Pages &blacktriangledown;</a></li>
+
+        <li><a href="">Contact</a></li>
+      </ul>
+
+      <!-- right button -->
+
+      <div class="hide">
+        <button id="btn">Hot Line 052</button>
+      </div>
+     
+       <!-- HAMBURGER MENU -->
+       <button type="button" class="hamburger" id="menu-btn">
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
+
+
+     <!-- MOBILE MENU -->
+     <div class="mobile-menu hidden" id="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="packages.html">Packages</a></li>
     
-</body>
+            <li class="dropdown">
+              <a href="">Blog &blacktriangledown;</a>
+            </li>
+    
+            <li id="nav_menu_pages"><a href=""> Pages &blacktriangledown;</a></li>
+    
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+     </div>
+     
+
+    </nav>
+
+
+
+    <!-- -------------------------------------------------- BANNER SECTION----------------------------------------------------------- -->
+    <!-- -------------------------------------------------- BANNER SECTION----------------------------------------------------------- -->
+
+    <section class="banner">
+
+      <div id="italic">BEST WAY TO TOUR</div>
+
+      <div id="big"> Lorem Ipsum Dolor Amet Consec </div>
+
+      <div class="searchbar" id="searchbox">
+          <div class="left-searchbar">
+              <div class="left-searchbar-left-span">
+                <span>Country </span>
+                <span>&#9660; </span>
+              </div>
+
+              <div  class="left-searchbar-right-span">
+                <span>City</span>
+                <span>&#9660; </span>
+              </div>
+                
+          </div>
+
+          <div class="right-searchbar">
+              <button id="search-btn">Search</button>
+          </div>     
+
+      </div>
+    </section>
+
+
+    <!-- ------------------------------------------------------- Donation section ------------------------------------------------- -->
+    <!-- ------------------------------------------------------- Donation section ------------------------------------------------- -->
+
+    <section class="donation">
+        <div class="donation-container">
+            <div>
+                <img src="./Assets/money_bag.svg" alt="moneybag">
+                <div><h3>Donation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
+                <div><a href="#" >Read more</a></div>
+            </div>
+    
+            <div>
+                <img src="./Assets/money_bag.svg" alt="moneybag">
+                <div><h3>Donation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+                <div>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+    
+            <div>
+                <img src="./Assets/money_bag.svg" alt="moneybag">
+                <div><h3>Donation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna</p></div>
+                <div> <a href="#">Read more</a></div>
+            </div>
+        </div>
+       
+    </section>
+
+
+<!-- ---------------------------------------------------- Tour Section ------------------------------------------------------->
+<!-- ---------------------------------------------------- Tour Section ------------------------------------------------------->
+
+    <section class="tour">
+        
+        <div id="tour-left">
+            <img src="./Assets/tour left.webp" alt="">
+        </div>
+
+        <div id="tour-right">
+           
+            <img src="./Assets/balloon.webp" alt="">
+
+            <div id="tour-right-inner">
+                <h2 id="amazing">Amazing Tour</h2>
+                <p id="amazing-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <p id="amazing-para-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut</p>
+            </div>
+
+            <div class="country-conatiner">
+               <div class="counrty">
+                    <img src="./Assets/london.webp" alt="">
+                   <div>
+                    <h3>London</h3>
+                    <h4>35 Places</h4>
+                   </div>
+                </div>
+
+                <div class="counrty">
+                    <img src="./Assets/kashmir.webp" alt="">
+                    <div>
+                        <h3>Kashmir</h3>
+                        <h4>75 places</h4>
+                    </div>
+                 </div>
+
+                 <div class="counrty">
+                <img src="./Assets/china.webp" alt="">
+                <div>
+                    <h3>China</h3>
+                    <h4>85 Places</h4>
+                </div>
+                 </div>
+
+             </div>
+        </div>
+    </section>
+
+
+
+
+<!-- ------------------------------------------------- Most Popular place section ----------------------------------------------------->
+<!-- ------------------------------------------------- Most Popular place section ----------------------------------------------------->
+
+  <section class="most-popular-place">
+     
+     <div class="top">
+         <img src="./Assets/balloon.webp" alt="">
+        <div id="heading">Most Popular Place</div>
+        <div id="para">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do <br> Eiusmod Tempor Incididunt Ut
+        </div>
+     </div>
+
+
+
+     <div class="bottom">
+         <div>
+             <img src="./Assets/life of egeft.webp" alt="">
+             <div class="heading"><b>Life of Egeft</b></div>
+             <div  class="para">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</div>
+             <div > <a href="#" class="link">Book Now</a></div>
+         </div>
+
+
+         <div>
+             <img src="./Assets/biking in norway.webp" alt="">
+             <div class="heading"><b>Biking in Norway</b></div>
+             <div class="para">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</div>
+             <div><a href="#"   class="link">Book Now</a></div>
+         </div>
+
+
+         <div id="grid-span3">
+             <img src="./Assets/tour of iceland.webp" alt="">
+             <div class="heading"><b>Tour of iceland</b></div>
+             <div  class="para">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</div>
+             <div><a href="#" class="link">Book Now</a></div>
+         </div>
+
+     </div>
+
+  </section>
+
+
+
+
+  <!-- ----------------------------------------------   Amanzing Tour Bus Section --------------------------------------------- -->
+  <!-- ----------------------------------------------   Amanzing Tour Bus Section --------------------------------------------- -->
+
+
+  <section class="amazing-tour-bus">
+            
+            <div id="top-left">
+                <img src="./Assets/balloon.webp" alt="">
+                <h2 id="amazing">Amazing Tour</h2>
+                <p id="amazing-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                <p id="amazing-para-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut</p>
+            </div>
+
+            <div id="mid">
+                <img src="./Assets/amazing tour bus.webp" alt="" id="left-down">
+            </div>  
+            
+            <div id="right">
+              <img src="./Assets/ama.webp" alt="">
+            </div>    
+
+            <div id="absolute">
+                 View ALL
+            </div>
+
+  </section>
+
+
+    <!-- -------------------------------------------------- NEWSLETTER SECTION ---------------------------------------------------------- -->
+    <!-- -------------------------------------------------- NEWSLETTER SECTION ---------------------------------------------------------- -->
+
+   <section class="newsletter">
+
+     <div class="newsletter-container">
+       <div class="top">
+        Join Our Newsletter
+       </div>
+
+       <div class="mid">
+        Subscribe to get Updated with new offers
+       </div>
+
+       <div class="bottom">
+         <input type="email" placeholder="Enter email address">
+         <button>SUBSCRIBE NOW</button>
+       </div>
+
+     </div>
+
+   </section>
+
+  </body>
 </html>
+
+
+
+
+<script>
+    const btn = document.getElementById('menu-btn')
+const nav = document.getElementById('menu')
+
+function navToggle() {
+  btn.classList.toggle('open')
+  nav.classList.toggle('hidden')
+  document.body.classList.toggle('no-scroll')
+}
+
+btn.addEventListener('click', navToggle)
+</script>
