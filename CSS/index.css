@@ -170,7 +170,7 @@ body{
 box-sizing: border-box;
 position: relative;
 padding-left: 8%;
-background-image: url(/Tourbi_clone/Assets/banner_bg.png);
+background-image: url("https://preview.colorlib.com/theme/tourbi/img/banner_bg.png.webp");
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
@@ -508,7 +508,7 @@ color: white;
 .newsletter {
     display: grid;
     place-items: center;
-    background-image: url(/Tourbi_clone/Assets/newsletter.webp);
+    background-image: url("https://preview.colorlib.com/theme/tourbi/img/cta_bg.png.webp");
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 10%;
