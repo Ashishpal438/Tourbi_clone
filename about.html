@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,88 +8,165 @@
     <title>About</title>
     <link rel="stylesheet" href="./CSS/about.css">
 </head>
+
 <body>
-    <header id = "header_part">
+    <!-- nav bar -->
+    <nav class="navbar">
+
+        <!-- logo  -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="./Assets/logo.webp" alt="">
+            </a>
+        </div>
+
+        <!-- middle links -->
+
+        <ul class="flex hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="packages.html">Packages</a></li>
+
+            <li class="dropdown">
+                <a href="blog.html">Blog &blacktriangledown;</a>
+            </li>
+
+            <li id="nav_menu_pages"><a href="elements.html"> Pages &blacktriangledown;</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- right button -->
+
+        <div class="hide">
+            <button id="btn">Hot Line 052</button>
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu hidden" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Packages</a></li>
+
+                <li class="dropdown">
+                    <a href="">Blog &blacktriangledown;</a>
+                </li>
+
+                <li id="nav_menu_pages"><a href=""> Pages &blacktriangledown;</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+    <!-- heading -->
+    <header id="header_part">
         <div id="header_div">
             <h1 id="header_heading">About Us</h1>
         </div>
     </header>
-     <!-- section1 -->
+    <!-- section1 -->
     <section id="section1_tour">
         <div id="section1_div1">
             <img src="https://preview.colorlib.com/theme/tourbi/img/xabout_img.png.pagespeed.ic.QUq7dEguPK.webp" alt="">
 
         </div>
-       
+
         <div id="section1_div2">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/xsection_tittle_img.png.pagespeed.ic.l6Y_DFc2UX.webp"  alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/xsection_tittle_img.png.pagespeed.ic.l6Y_DFc2UX.webp"
+                alt="">
             <div>
                 <h2 id="section1_mainheading">Amazing Tour</h2>
-                <p id=section1_para1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-                <p id="section1_para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut</p>
+                <p id=section1_para1>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida Risus commodo
+                    viverra maecenas accumsan lacus vel facilisis.</p>
+                <p id="section1_para2">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                    incididunt ut</p>
             </div>
             <div id="section1_div3">
-               <div id="section1_div3_div">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xtour_icon_1.png.pagespeed.ic.N2lju0kpCd.webp "  alt="">
+                <div id="section1_div3_div">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xtour_icon_1.png.pagespeed.ic.N2lju0kpCd.webp "
+                        alt="">
                     <h2>London</h2>
                     <p>35 Places</p>
                 </div>
                 <div id="section1_div3_div">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xtour_icon_2.png.pagespeed.ic.31KYi2IFxh.webp" alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xtour_icon_2.png.pagespeed.ic.31KYi2IFxh.webp"
+                        alt="">
                     <h2>Kashmir</h2>
                     <p>75 places</p>
-                 </div>
-                 <div id="section1_div3_div">
-                <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xtour_icon_3.png.pagespeed.ic.PdYvlbgFvo.webp" alt="">
-                <h2>China</h2>
-                <p>85 Places</p>
-                 </div>
-             </div>
+                </div>
+                <div id="section1_div3_div">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xtour_icon_3.png.pagespeed.ic.PdYvlbgFvo.webp"
+                        alt="">
+                    <h2>China</h2>
+                    <p>85 Places</p>
+                </div>
+            </div>
         </div>
     </section>
     <!-- section 2 -->
     <section id="section2_place">
-        <img src="https://preview.colorlib.com/theme/tourbi/img/xsection_tittle_img.png.pagespeed.ic.l6Y_DFc2UX.webp" height="120px" alt="">
+        <img src="https://preview.colorlib.com/theme/tourbi/img/xsection_tittle_img.png.pagespeed.ic.l6Y_DFc2UX.webp"
+            height="120px" alt="">
         <h1 id="section2_heading">Most Popular place</h1>
-        <p id="section2_para">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do Eiusmod Tempor Incididunt Ut</p>
+        <p id="section2_para">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do Eiusmod Tempor Incididunt
+            Ut</p>
     </section>
     <!-- section3 -->
     <section id="section3">
         <div id="section3_div">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xplace_icon_1.png.pagespeed.ic.euMxvb3NVe.webp" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xplace_icon_1.png.pagespeed.ic.euMxvb3NVe.webp"
+                alt="">
             <h1>Life of Egeft</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
             <a href="">Book Now</a>
         </div>
         <div id="section3_div">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xplace_icon_2.png.pagespeed.ic.ijPl6k8caV.webp" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xplace_icon_2.png.pagespeed.ic.ijPl6k8caV.webp"
+                alt="">
             <h1>Biking in Norway</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
-            <a href="">Book Now</a> 
+            <a href="">Book Now</a>
         </div>
         <div id="section3_div">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xplace_icon_3.png.pagespeed.ic.7T5OmMqE2P.webp" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/icon/xplace_icon_3.png.pagespeed.ic.7T5OmMqE2P.webp"
+                alt="">
             <h1>Tour of Iceland</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor</p>
-            <a href="">Book Now</a> 
+            <a href="">Book Now</a>
         </div>
     </section>
     <!-- section4 -->
     <section id="section4">
         <div>
-            <img src="https://preview.colorlib.com/theme/tourbi/img/xsection_tittle_img.png.pagespeed.ic.l6Y_DFc2UX.webp" height="120px" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/xsection_tittle_img.png.pagespeed.ic.l6Y_DFc2UX.webp"
+                height="120px" alt="">
             <h1 id="section4_heading">Our Blog</h1>
-            <p id="section4_para">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do Eiusmod Tempor Incididunt Ut</p>
+            <p id="section4_para">Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit Sed Do Eiusmod Tempor
+                Incididunt Ut</p>
         </div>
 
     </section>
     <!-- section5 -->
     <section id="section5">
         <div>
-            <img src="https://preview.colorlib.com/theme/tourbi/img/blog/xblog_1.png.pagespeed.ic.BcSMe2WW5W.webp" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/blog/xblog_1.png.pagespeed.ic.BcSMe2WW5W.webp"
+                alt="">
             <h1>Luxerious Car Rental</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-            
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+
             <div id="section5_childdiv">
                 <a href=""><i class="far fa-calendar"></i></a><span>13th Dec</span>
                 <a href=""><i class="far fa-heart"></i></a><span>15</span>
@@ -97,9 +175,11 @@
 
         </div>
         <div>
-            <img src="https://preview.colorlib.com/theme/tourbi/img/blog/xblog_2.png.pagespeed.ic.hgAPosWiOz.webp" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/blog/xblog_2.png.pagespeed.ic.hgAPosWiOz.webp"
+                alt="">
             <h1>Luxerious Car Rental</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
             <div id="section5_childdiv">
                 <a href=""><i class="far fa-calendar"></i></a><span>13th Dec</span>
                 <a href=""><i class="far fa-heart"></i></a><span>15</span>
@@ -107,9 +187,11 @@
             </div>
         </div>
         <div>
-            <img src="https://preview.colorlib.com/theme/tourbi/img/blog/xblog_3.png.pagespeed.ic.1TRX8qI6sF.webp" alt="">
+            <img src="https://preview.colorlib.com/theme/tourbi/img/blog/xblog_3.png.pagespeed.ic.1TRX8qI6sF.webp"
+                alt="">
             <h1>Luxerious Car Rental</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
             <div id="section5_childdiv">
                 <a href=""><i class="far fa-calendar"></i></a><span>13th Dec</span>
                 <a href=""><i class="far fa-heart"></i></a><span>15</span>
@@ -121,7 +203,9 @@
         <section id="footer_section">
             <div id="parent_footer1">
                 <h2 class="fotter_heading">About Agency</h2>
-                <p class="fotter_para">The World has become so fast paced that people don't want to stand by reading a page of information, they would much rather look at a presentation and understand the message.It has come to a point where images. </p>
+                <p class="fotter_para">The World has become so fast paced that people don't want to stand by reading a
+                    page of information, they would much rather look at a presentation and understand the message.It has
+                    come to a point where images. </p>
             </div>
             <div id="parent_footer2">
                 <h2 class="fotter_heading">Navigation Links</h2>
@@ -138,52 +222,74 @@
             </div>
             <div id="parent_footer3">
                 <h2 class="fotter_heading">Newsletter</h2>
-                <p  class="fotter_para">Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold bearing days open</p>
-                <div><input type="email" name="" id="email" placeholder="Email Address"><button type="submit" id="button_submit_footer"><span><i class="far fa-paper-plane fa-1x"></i></span></button></div>
+                <p class="fotter_para">Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold
+                    bearing days open</p>
+                <div><input type="email" name="" id="email" placeholder="Email Address"><button type="submit"
+                        id="button_submit_footer"><span><i class="far fa-paper-plane fa-1x"></i></span></button></div>
                 <p id="submitting"></p>
             </div>
             <div id="parent_footer4">
                 <h2 class="fotter_heading">Instafeed</h2>
                 <div id="img_fotterdiv">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_1.png.pagespeed.ic.pKJOiF18o9.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_2.png.pagespeed.ic.9y9oc3nf7h.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_3.png.pagespeed.ic.tpLB1vMRwU.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_4.png.pagespeed.ic.rQv_K-VUpf.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_5.png.pagespeed.ic.pUDQA0kQXP.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_6.png.pagespeed.ic.7tdWmNvV2S.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_7.png.pagespeed.ic.3McTHMBc3m.webp" alt="">
-                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_8.png.pagespeed.ic.hD22gB6aTo.webp" alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_1.png.pagespeed.ic.pKJOiF18o9.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_2.png.pagespeed.ic.9y9oc3nf7h.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_3.png.pagespeed.ic.tpLB1vMRwU.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_4.png.pagespeed.ic.rQv_K-VUpf.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_5.png.pagespeed.ic.pUDQA0kQXP.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_6.png.pagespeed.ic.7tdWmNvV2S.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_7.png.pagespeed.ic.3McTHMBc3m.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_8.png.pagespeed.ic.hD22gB6aTo.webp"
+                        alt="">
                 </div>
             </div>
         </section>
         <hr style="margin-top: 2em;">
-       <div id="end_div_footer">
-        <p id="fotter_para">Copyright ©2022 All rights reserved | This template is made with <a style="color: #7a7a7a;" href=""><i class="far fa-heart"></i></a>< by <a id="colirib_a" href="">Colorib</a></p>
-        <div id="fab_icon_footer">
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fas fa-globe"></i></a>
-            <a href=""><i class="fab fa-behance"></i></a>
+        <div id="end_div_footer">
+            <p id="fotter_para">Copyright ©2022 All rights reserved | This template is made with <a
+                    style="color: #7a7a7a;" href=""><i class="far fa-heart"></i></a>
+                < by <a id="colirib_a" href="">Colorib</a>
+            </p>
+            <div id="fab_icon_footer">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fas fa-globe"></i></a>
+                <a href=""><i class="fab fa-behance"></i></a>
+            </div>
+
         </div>
 
-       </div>
-       
 
     </footer>
-   
-    
+
+
 </body>
+
 </html>
 <script src="https://kit.fontawesome.com/1166b63301.js" crossorigin="anonymous"></script>
 <script>
-    var button= document.getElementById("button_submit_footer").addEventListener("click" , submit_mail)
+    var button = document.getElementById("button_submit_footer").addEventListener("click", submit_mail)
 
-    function submit_mail(){
+    function submit_mail() {
         var p = document.querySelector("#submitting")
         p.textContent = "Submitting";
-        p.style.color="red"
+        p.style.color = "red"
     }
+
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    function navToggle() {
+        btn.classList.toggle('open')
+        nav.classList.toggle('hidden')
+        document.body.classList.toggle('no-scroll')
+    }
+
+    btn.addEventListener('click', navToggle)
 </script>
-
-
-

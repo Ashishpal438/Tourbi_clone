@@ -13,6 +13,8 @@
                 width: 96%;
                 margin: auto;
                 margin-top: 3em;
+                row-gap: 2em;
+                border: 1px solid blue;
                 display: grid;
             }
 
@@ -21,14 +23,47 @@
                 font-family: "Poppins", sans-serif;
                 font-weight: 500;
                 font-size: 2em;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
             #section8_div1{
                 width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
-                column-gap: 1em;
+                column-gap: 2em;
             }
+            #section8_div1 img{
+                height: 100%;
+                width: 100%;
+            }
+            #section8_div2{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2em;
+                border: 1px solid black;
+            }
+          
+            #section8_div2 div{
+                border: 1px solid blueviolet;
+            }
+              /* #section8_div2 img{
+              width: 100%;
+              height: 100%;
+            } */
+            #section8_div3{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 2em;
+                border: 1px solid black;
+            }
+            #section8_div3 img{
+              width: 100%;
+              height: 100%;
+            }
+            #section8_div3 div{
+            }
+
 
 
 
@@ -41,6 +76,66 @@
 </head>
 
 <body>
+     <!-- nav bar -->
+     <nav class="navbar">
+
+        <!-- logo  -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="./Assets/logo.webp" alt="">
+            </a>
+        </div>
+
+        <!-- middle links -->
+
+        <ul class="flex hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="packages.html">Packages</a></li>
+
+            <li class="dropdown">
+                <a href="blog.html">Blog &blacktriangledown;</a>
+            </li>
+
+            <li id="nav_menu_pages"><a href="elements.html"> Pages &blacktriangledown;</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- right button -->
+
+        <div class="hide">
+            <button id="btn">Hot Line 052</button>
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu hidden" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="packages.html">Packages</a></li>
+
+                <li class="dropdown">
+                    <a href="">Blog &blacktriangledown;</a>
+                </li>
+
+                <li id="nav_menu_pages"><a href=""> Pages &blacktriangledown;</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+    <!-- header -->
     <header id="header_part">
         <div id="header_div">
             <h1 id="header_heading">Elements</h1>
@@ -335,21 +430,20 @@
     <section id="section8">
         <h2>Image Gallery</h2>
         <div id="section8_div1">
-            <div style="border: 1px solid black;"><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g1.jpg.webp" width="100%" height="100%" alt=""></div>
-            <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g2.jpg.webp" alt=""></div>
-           <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g3.jpg.webp" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g1.jpg.webp"  alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g2.jpg.webp"  alt=""></div>
+           <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g3.jpg.webp"   alt=""></div>
 
         </div>
         <div id="section8_div2">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/elements/g4.jpg.webp" alt="">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/elements/g5.jpg.webp" alt="">
+           <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g4.jpg.webp" width="50%" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g5.jpg.webp" alt=""></div>
 
         </div>
         <div id="section8_div3">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/elements/g6.jpg.webp" alt="">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/elements/g7.jpg.webp" alt="">
-            <img src="https://preview.colorlib.com/theme/tourbi/img/elements/g8.jpg.webp" alt="">
-
+            <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g6.jpg.webp" alt=""></div>
+            <div><img src="https://preview.colorlib.com/theme/tourbi/img/elements/g7.jpg.webp" alt=""></div>
+            <div> <img src="https://preview.colorlib.com/theme/tourbi/img/elements/g8.jpg.webp" alt=""></div>
         </div>
     </section>
 
@@ -358,3 +452,15 @@
 </body>
 
 </html>
+<script>
+     const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    function navToggle() {
+        btn.classList.toggle('open')
+        nav.classList.toggle('hidden')
+        document.body.classList.toggle('no-scroll')
+    }
+
+    btn.addEventListener('click', navToggle)
+</script>
