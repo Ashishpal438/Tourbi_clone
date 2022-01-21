@@ -229,6 +229,46 @@ color: white;
     display: flex;
 }
 
+.left-searchbar img{
+    width: 12px;
+    opacity: 0.7;
+}
+
+
+/* dropdown list styling */
+
+.left-searchbar ul {
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    top: 67%;
+    list-style: none;
+    border: 1px solid  rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.left-searchbar ul {
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+}
+.left-searchbar ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+}
+.left-searchbar ul li:hover{
+    background-color: #f0f0f0;
+}
+
+.left-searchbar .vanish{
+    visibility: hidden;
+}
+
+
+.rotate {
+    transform: rotate(180deg);
+}
+
 .left-searchbar-left-span {
     box-sizing: border-box;
     width: 50%;
