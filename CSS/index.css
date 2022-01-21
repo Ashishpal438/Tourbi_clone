@@ -812,6 +812,28 @@ color: white;
         flex-direction: column;
         border: 5px solid #FFCD01;
     }
+
+
+    
+     
+/* dropdown list styling */
+
+.left-searchbar ul {
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    top: 105%;
+    list-style: none;
+    border: 1px solid  rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.left-searchbar ul li {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+} 
     
     
     .left-searchbar {
@@ -825,6 +847,7 @@ color: white;
 
   .right-searchbar {
    position: absolute;
+   z-index: 1;
   top: 53%;
   width: 100%;
   height: 60px;
@@ -1155,6 +1178,25 @@ color: white;
             border: 5px solid #FFCD01;
         }
         
+
+     
+/* dropdown list styling */
+
+.left-searchbar ul {
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    list-style: none;
+    border: 1px solid  rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.left-searchbar ul li {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+}   
         
 .left-searchbar {
     height: 70px;
