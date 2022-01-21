@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&family=Kaushan+Script&display=swap");
-
 /* universal */
+
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
 }
@@ -66,7 +67,6 @@ body {
   color: #ffcd01;
   transition: 0.5s;
 }
-
 /* Hamburger Menu Icon */
 
 .hamburger {
@@ -113,7 +113,6 @@ body {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
-
 /* Mobile Menu */
 
 .mobile-menu {
@@ -153,8 +152,8 @@ body {
 .no-scroll {
   overflow: hidden;
 }
-
 /* contact-title */
+
 #contact-title {
   background-color: #00c0ff;
   height: 525px;
@@ -172,6 +171,7 @@ body {
   color: white;
 }
 /* map */
+
 #map {
   width: 92%;
   margin: 180px auto 48px auto;
@@ -183,27 +183,23 @@ body {
   height: 503px;
   border: none;
 }
-
 /* contact */
+
 #contact {
   font-family: "Poppins", sans-serif;
   font-size: 27px;
   width: 92%;
   margin: 0px auto 20px auto;
 }
-
 /* contact-form */
+
 #contact-form {
   display: grid;
   margin-left: 50px;
   width: 64%;
   float: left;
   row-gap: 30px;
-  grid-template-areas:
-    "T T"
-    "N A"
-    "S S"
-    "M M";
+  grid-template-areas: "T T" "N A" "S S" "M M";
 }
 
 #contact-form > div > input {
@@ -219,7 +215,7 @@ body {
 
 #contact-form > div:nth-of-type(1) {
   grid-area: T;
-  width: 749px;
+  width: 95%;
   height: 189px;
 }
 
@@ -236,10 +232,12 @@ body {
 
 #contact-form > div:nth-of-type(2) {
   grid-area: N;
+  margin-top: 10px;
 }
 
 #contact-form > div:nth-of-type(3) {
   grid-area: A;
+  margin-top: 10px;
 }
 
 #contact-form > div:nth-of-type(4) {
@@ -270,7 +268,7 @@ body {
 }
 
 #contact-medium {
-  width: 31.6%;
+  width: 28%;
   height: 453px;
   float: right;
   position: relative;
@@ -279,13 +277,14 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding-left: 10px;
 }
 
 #contact-medium > div {
   display: flex;
   padding: 0px 15px;
   width: 85%;
-  margin: 0px auto;
+  margin: 10px auto 0px auto;
   gap: 20px;
 }
 
@@ -305,22 +304,230 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+/* media - 1200px */
+
+@media screen and (max-width: 1200px) {
+  #contact-title > h2 {
+    font-size: 50px;
+  }
+  #map {
+    width: 80%;
+    margin: 100px auto 48px auto;
+    padding: 0px 15px 24px 15px;
+  }
+  #contact {
+    width: 80%;
+  }
+  #contact-form {
+    display: grid;
+    margin-left: 118px;
+    width: 53%;
+    row-gap: 30px;
+    grid-template-areas: "T T" "N A" "S S" "M M";
+  }
+  #contact-form > div:nth-of-type(1) {
+    grid-area: T;
+    height: 189px;
+  }
+  #contact-form > div:nth-of-type(1) {
+    width: 99%;
+  }
+  #contact-form > div > input {
+    width: 93%;
+  }
+  #contact-form > div:nth-of-type(4) > input {
+    width: 96.5%;
+  }
+  #contact-form > div:nth-of-type(5) {
+    grid-area: M;
+    border: 1px solid silver;
+    padding-left: 18px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    height: 60px;
+    margin-top: 18px;
+    width: 31.5%;
+  }
+  #contact-form > div:nth-of-type(5) > div:nth-of-type(2) {
+    padding: 10px 17px;
+    background-color: #1fc3ff;
+  }
+  #contact-medium {
+    width: 31.6%;
+    height: 453px;
+    float: right;
+    position: relative;
+    right: 31px;
+    top: -55px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+/* media - 1140px */
+
+@media screen and (max-width: 1140px) {
+  #contact-form > div:nth-of-type(1) > textarea {
+    width: 90%;
+  }
+  #contact-form > div > input {
+    width: 80%;
+  }
+  #contact-form > div:nth-of-type(4) > input {
+    width: 90%;
+  }
+  #contact-form > div:nth-of-type(5) {
+    width: 32.3%;
+  }
+}
+/* media - 1065px */
+
+@media screen and (max-width: 1065px) {
+  #contact-form > div:nth-of-type(1) > textarea {
+    width: 80%;
+  }
+  #contact-form > div > input {
+    width: 60%;
+  }
+  #contact-form > div:nth-of-type(4) > input {
+    width: 80%;
+  }
+  #contact-form > div:nth-of-type(5) {
+    width: 32.3%;
+  }
+}
+/* media - 992px */
+
+@media screen and (max-width: 992px) {
+  #contact-title {
+    height: 373px;
+  }
+  #contact-title > h2 {
+    font-size: 40px;
+  }
+  #map {
+    width: 70%;
+    margin: 80px auto 48px auto;
+    padding: 0px 15px 24px 15px;
+  }
+  #contact {
+    width: 70%;
+  }
+  #contact-form {
+    display: grid;
+    margin-left: 50px;
+    width: 70%;
+    float: none;
+    margin: auto;
+    grid-template-areas: "T T" "N A" "S S" "M M";
+  }
+  #contact-form > div > input {
+    width: 90%;
+  }
+  #contact-form > div:nth-of-type(1) {
+    width: 121%;
+  }
+  #contact-form > div:nth-of-type(4) > input {
+    width: 97%;
+  }
+  #contact-form > div:nth-of-type(5) {
+    width: 45%;
+    border: none;
+  }
+  #contact-form > div:nth-of-type(3) > input {
+    margin-left: 15px;
+  }
+  #contact-medium {
+    width: 80%;
+    height: 290px;
+    position: static;
+    float: none;
+    margin: auto;
+    flex-direction: column;
+  }
+  #contact-form > div:nth-of-type(5) > div:nth-of-type(2) > {
+    margin-right: 5px;
+  }
+}
+/* media - 768px */
+
+@media screen and (max-width: 768px) {
+  #contact-title > h2 {
+    font-size: 35px;
+  }
+  #map {
+    margin: 70px auto 48px auto;
+  }
+}
 
 @media screen and (max-width: 750px) {
   .navbar .hide {
     display: none;
   }
-
   .hamburger {
     display: block;
   }
 }
+/* media - 750px-1160px */
+
 @media screen and (min-width: 750px) and (max-width: 1160px) {
   .navbar .hide {
     display: none;
   }
-
   .hamburger {
     display: block;
+  }
+}
+/* media - 576px */
+
+@media screen and (max-width: 576px) {
+  #map {
+    display: none;
+  }
+  #contact {
+    width: 95%;
+    margin-top: 70px;
+  }
+  #contact-form {
+    width: 95%;
+    grid-template-areas:
+      "T"
+      "N"
+      "A"
+      "S"
+      "M";
+  }
+  #contact-form > div > input {
+    width: 95%;
+  }
+  #contact-form > div:nth-of-type(2) {
+    width: 102%;
+  }
+  #contact-form > div:nth-of-type(3) {
+    width: 102%;
+  }
+  #contact-form > div:nth-of-type(5) {
+    width: 42%;
+    border: 1px solid whitesmoke;
+  }
+  #contact-form > div:nth-of-type(3) > input {
+    margin-left: 0px;
+  }
+  #contact-medium {
+    width: 90%;
+    height: 290px;
+    position: static;
+    float: none;
+    margin: auto;
+    flex-direction: column;
+  }
+  #contact-form > div:nth-of-type(1) > textarea {
+    width: 96.5%;
+  }
+  #contact-form > div:nth-of-type(1) {
+    width: 100%;
   }
 }
