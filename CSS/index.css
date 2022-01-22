@@ -49,6 +49,43 @@ body{
     color: #FFCD01;
 }
 
+
+/* sliding down links */
+
+.dropdown {
+    position: relative;
+}
+
+#slide {
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    width:  10vw;
+    background-color: #FFCC00;
+    border-radius: 5px;
+    padding:  10px 20px;
+}
+
+
+#slide ul {
+    padding-inline-start: 0px;
+}
+
+#slide ul li {
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#slide {
+    display: none;
+}
+
+
+
 .navbar #btn {
     width: 175px;
     height: 55px;

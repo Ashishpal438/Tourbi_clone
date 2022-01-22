@@ -31,7 +31,15 @@
         <li><a href="./packages.html">Packages</a></li>
 
         <li class="dropdown">
-          <a href="./blog.html">Blog &blacktriangledown;</a>
+          <a href="./blog.html" id="slider">Blog &blacktriangledown;</a>
+       
+          <div id="slide" class="slide-hide">
+             <ul>
+               <li href="blog.html">Blog</li>
+               <li>Single Blog</li>
+             </ul>
+          </div>
+
         </li>
 
         <li id="nav_menu_pages"><a href="./elements.html"> Pages &blacktriangledown;</a></li>
@@ -423,6 +431,17 @@ btn.addEventListener('click', navToggle)
 
 
 
+// nav links dropdown hover-->
+
+var slider = document.getElementById("slider")
+var slide = document.getElementById("slide")
+slider.addEventListener("mouseover", () => {
+   slide.style.display = "block"
+})
+
+slider.addEventListener("mouseout", () => {
+   slide.style.display = "none"
+})
 
 
 
