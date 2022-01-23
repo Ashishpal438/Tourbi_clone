@@ -10,18 +10,10 @@
     <style>
         @media screen and (min-width:1050px) {
 
-             /* footer section CSS  */
-  
-           
         }
 
 
-        @media screen and (min-width:650px) and (max-width:1050px) {
-            /* section10 */
-              /* section10 */
-            
-
-        }
+        @media screen and (min-width:650px) and (max-width:1050px) {}
 
         @media screen and (min-width:0px) and (max-width:650px) {}
            
@@ -420,7 +412,7 @@
                     <div id="ul_div"></div><span>Fta Keys</span>
                 </li>
                 <li>
-                    <div></div><span>For Women Only Your Computer Usage</span>
+                    <div id=""></div><span>For Women Only Your Computer Usage</span>
                 </li>
                 <li>
                     <div></div><span>Facts Why Inkjet Printing Is Very Appealing</span>
@@ -534,37 +526,37 @@
             <div>
                 <h2>CheckBoxes</h2>
                 <label>01 Sample Checkbox<label>
-                        <input type="checkbox" name="" id=""><br>
+                        <input type="checkbox" name="" id="" style="cursor: pointer;"><br>
                         <br>
                         <label>02 Primary Color Checkbox</label>
-                        <input type="checkbox" name="" id=""><br>
+                        <input type="checkbox" name="" id="" style="cursor: pointer;"><br>
                         <br>
                         <label>03 Confirm Color Checkbox</label>
-                        <input type="checkbox" name="" id=""><br>
+                        <input type="checkbox" name="" id="" style="cursor: pointer;"><br>
                         <br>
                         <label>04 Disabled Checkbox</label>
-                        <input type="checkbox" name="" id=""><br>
+                        <input type="checkbox" name="" id="" style="cursor: not-allowed;"><br>
                         <br>
                         <label>05 Disabled Checkbox Active</label>
-                        <input type="checkbox" name="" id=""><br>
+                        <input type="checkbox" name="" id="" disabled="disabled" style="cursor: not-allowed;"><br>
                         <br>
             </div>
             <div>
                 <h2>Radios</h2>
                 <label>01 Sample Radio<label>
-                        <input type="radio" name="" id=""><br>
+                        <input type="radio" name="" id="" style="cursor: pointer;"><br>
                         <br>
                         <label>02 Primary Color Radio</label>
-                        <input type="radio" name="" id=""><br>
+                        <input type="radio" name="" id="" style="cursor: pointer;"><br>
                         <br>
                         <label>03 Confirm Color radio</label>
-                        <input type="radio" name="" id=""><br>
+                        <input type="radio" name="" id="" style="cursor: pointer;"><br>
                         <br>
                         <label>04 Disabled Radio</label>
-                        <input type="radio" name="" id=""><br>
+                        <input type="radio" name="" id="" style="cursor: not-allowed;"><br>
                         <br>
                         <label>05 Disabled Radio Active</label>
-                        <input type="radio" name="" id="" disabled="disabled"><br>
+                        <input type="radio" name="" id="" disabled="disabled" style="cursor: not-allowed;"><br>
                         <br>
             </div>
         </aside>
@@ -646,6 +638,14 @@
 </html>
 <script src="https://kit.fontawesome.com/1166b63301.js" crossorigin="anonymous"></script>
 <script>
+    var button = document.getElementById("button_submit_footer").addEventListener("click", submit_mail)
+
+    function submit_mail() {
+        var p = document.querySelector("#submitting")
+        p.textContent = "Submitting";
+        p.style.color = "red"
+    }
+
     const btn = document.getElementById('menu-btn')
     const nav = document.getElementById('menu')
 
@@ -656,8 +656,8 @@
     }
 
     btn.addEventListener('click', navToggle)
-
-    // var ipt = document.getElementById("input_city").addEventListener("focus", city_div)
+</script>
+<!-- // var ipt = document.getElementById("input_city").addEventListener("focus", city_div)
     // var ipt2 = document.addEventListener("blur", remove_div)
 
     // function city_div() {
@@ -679,5 +679,4 @@
     // }
     // function remove_div() {
     //     document.removeEventListener("focus", city_div)
-    // }
-</script>
+    // } -->
