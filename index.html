@@ -28,10 +28,18 @@
       <ul class="flex hide">
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
-        <li><a href="./packages.html">Packages</a></li>
+        <li><a href="./index.html">Packages</a></li>
 
         <li class="dropdown">
-          <a href="./blog.html">Blog &blacktriangledown;</a>
+          <a href="./blog.html" id="slider">Blog &blacktriangledown;</a>
+       
+          <div id="slide" class="slide-hide">
+             <ul>
+               <li href="blog.html">Blog</li>
+               <li>Single Blog</li>
+             </ul>
+          </div>
+
         </li>
 
         <li id="nav_menu_pages"><a href="./elements.html"> Pages &blacktriangledown;</a></li>
@@ -58,15 +66,15 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="packages.html">Packages</a></li>
+            <li><a href="./index.html">Packages</a></li>
     
             <li class="dropdown">
-              <a href="">Blog &blacktriangledown;</a>
+              <a href="./blog.html">Blog &blacktriangledown;</a>
             </li>
     
-            <li id="nav_menu_pages"><a href=""> Pages &blacktriangledown;</a></li>
+            <li id="nav_menu_pages"><a href="./elements.html"> Pages &blacktriangledown;</a></li>
     
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="./contact.html">Contact</a></li>
           </ul>
      </div>
      
@@ -86,16 +94,23 @@
 
       <div class="searchbar" id="searchbox">
           <div class="left-searchbar">
-              <div class="left-searchbar-left-span">
-                <span>Country </span>
-                <span>&#9660; </span>
+              <div class="left-searchbar-left-span" id="selectField">
+                <span id="selectText">Country </span>
+                <span  id="arrow-icon"><img src="https://cdn-icons-png.flaticon.com/512/60/60781.png" alt=""></span>
               </div>
+
+              <ul id="list" class="vanish">
+                <li class="options">Country</li>
+                <li class="options">One</li>
+                <li class="options">Two</li>
+                <li class="options">Three</li>
+              </ul>
+
 
               <div  class="left-searchbar-right-span">
                 <span>City</span>
-                <span>&#9660; </span>
+                <span><img src="https://cdn-icons-png.flaticon.com/512/60/60781.png" alt=""> </span>
               </div>
-                
           </div>
 
           <div class="right-searchbar">
@@ -413,4 +428,45 @@ function navToggle() {
 }
 
 btn.addEventListener('click', navToggle)
+
+
+
+// nav links dropdown hover-->
+
+var slider = document.getElementById("slider")
+var slide = document.getElementById("slide")
+slider.addEventListener("mouseover", () => {
+   slide.style.display = "block"
+})
+
+slider.addEventListener("mouseout", () => {
+   slide.style.display = "none"
+})
+
+
+
+// custom select dropdown --->
+
+var selectField = document.getElementById("selectField");
+ var selectText = document.getElementById("selectText");
+ var options = document.getElementsByClassName("options")
+ var list = document.getElementById("list")
+ var arrowIcon = document.getElementById("arrow-icon")
+ 
+selectField.addEventListener("click", () => {
+  list.classList.toggle("vanish");
+  arrowIcon.classList.toggle("rotate")
+})
+
+
+for (const option of options) {
+  option.addEventListener("click", () => {
+     selectText.innerHTML = option.innerHTML;
+     list.classList.toggle("vanish");
+     arrowIcon.classList.toggle("rotate")
+   })
+}
+
+
+
 </script>

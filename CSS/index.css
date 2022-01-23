@@ -49,6 +49,43 @@ body{
     color: #FFCD01;
 }
 
+
+/* sliding down links */
+
+.dropdown {
+    position: relative;
+}
+
+#slide {
+    position: absolute;
+    top: 45px;
+    left: -20px;
+    width:  10vw;
+    background-color: #FFCC00;
+    border-radius: 5px;
+    padding:  10px 20px;
+}
+
+
+#slide ul {
+    padding-inline-start: 0px;
+}
+
+#slide ul li {
+    box-sizing: border-box;
+    list-style: none;
+    color: #fff;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+#slide {
+    display: none;
+}
+
+
+
 .navbar #btn {
     width: 175px;
     height: 55px;
@@ -227,6 +264,46 @@ color: white;
     color: rgb(131, 127, 127);
     cursor: pointer;
     display: flex;
+}
+
+.left-searchbar img{
+    width: 12px;
+    opacity: 0.7;
+}
+
+
+/* dropdown list styling */
+
+.left-searchbar ul {
+    background-color: white;
+    width: 30%;
+    position: absolute;
+    top: 67%;
+    list-style: none;
+    border: 1px solid  rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.left-searchbar ul {
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+}
+.left-searchbar ul li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+}
+.left-searchbar ul li:hover{
+    background-color: #f0f0f0;
+}
+
+.left-searchbar .vanish{
+    visibility: hidden;
+}
+
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .left-searchbar-left-span {
@@ -772,6 +849,28 @@ color: white;
         flex-direction: column;
         border: 5px solid #FFCD01;
     }
+
+
+    
+     
+/* dropdown list styling */
+
+.left-searchbar ul {
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    top: 105%;
+    list-style: none;
+    border: 1px solid  rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.left-searchbar ul li {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+} 
     
     
     .left-searchbar {
@@ -785,6 +884,7 @@ color: white;
 
   .right-searchbar {
    position: absolute;
+   z-index: 1;
   top: 53%;
   width: 100%;
   height: 60px;
@@ -1115,6 +1215,25 @@ color: white;
             border: 5px solid #FFCD01;
         }
         
+
+     
+/* dropdown list styling */
+
+.left-searchbar ul {
+    background-color: white;
+    width: 50%;
+    position: absolute;
+    top: 55%;
+    list-style: none;
+    border: 1px solid  rgb(218, 216, 216);
+    border-radius: 5px;
+}
+
+.left-searchbar ul li {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+}   
         
 .left-searchbar {
     height: 70px;
