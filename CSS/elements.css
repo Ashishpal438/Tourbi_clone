@@ -152,17 +152,19 @@ body {
   height: 95vh;
   background-color: rgb(0, 192, 255);
   border-radius: 4px;
+  top: 0;
+  left: 0;
+  text-align: center;
+  box-sizing: border-box;
 }
-
 #header_heading {
   color: #fff;
   font-weight: 700;
   font-size: 5.5em;
   font-family: "Poppins", sans-serif;
-  line-height: 1.2em;
-  position: absolute;
-  top: 2.6em;
-  left: 5.5em;
+  margin-top: 0%;
+  /* border: 1px solid black; */
+  padding: 16%;
 }
 /* section1 */
 
@@ -709,18 +711,15 @@ h6 {
   margin-top: 0;
 }
 
-
 /* #ul_div {
   border: 3px solid #fc0;
   border-radius: 50%;
 } */
 
-
-#section9_div2 li{
+#section9_div2 li {
   list-style: disc;
-  color: #fc0;;
+  color: #fc0;
   list-style-type: circle;
-  
 }
 #section9_div2 li span {
   font-family: "Roboto", sans-serif;
@@ -1044,18 +1043,10 @@ select > option {
   #header_part {
     height: 70vh;
   }
-
-  #header_div {
-    width: 100%;
-    text-align: center;
-    height: 70vh;
-  }
-
   #header_heading {
     font-weight: 550;
-    font-size: 3.2em;
-    top: 3.4em;
-    left: 6em;
+    font-size: 3em;
+    padding: 18%;
   }
   /* section1 */
   #section1 p {
@@ -1304,17 +1295,10 @@ select > option {
     height: 60vh;
   }
 
-  #header_div {
-    width: 100%;
-    text-align: center;
-    height: 70vh;
-  }
-
   #header_heading {
     font-weight: 500;
-    font-size: 2.4em;
-    top: 4.5em;
-    left: 5.6em;
+    font-size: 2em;
+    padding: 25%;
   }
   /* section1 */
 
