@@ -1,13 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="navbar">
+
+        <!-- logo  -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="./Assets/logo.webp" alt="">
+            </a>
+        </div>
+
+        <!-- middle links -->
+
+        <ul class="flex hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html">Packages</a></li>
+
+            <li class="dropdown">
+                <a href="blog.html">Blog &blacktriangledown;</a>
+            </li>
+
+            <li id="nav_menu_pages"><a href="elements.html"> Pages &blacktriangledown;</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- right button -->
+
+        <div class="hide">
+            <button id="btn">Hot Line 052</button>
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <button type="button" class="hamburger" id="menu-btn">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+        </button>
+
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu hidden" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Packages</a></li>
+
+                <li class="dropdown">
+                    <a href="blog.html">Blog &blacktriangledown;</a>
+                </li>
+
+                <li id="nav_menu_pages"><a href="elements.html"> Pages &blacktriangledown;</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </nav>
+
+    <!-- Contact-title -->
+    <section id="contact-title">
+        <h2>Contact</h2>
+    </section>
+
+    <!-- map -->
+    <section id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14821.965354905535!2d82.8317478!3d21.76123705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1642571301483!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section id="contact">
+        <p>Get in Touch</p>
+    </section>
+    <!-- contact-form -->
+    <section id="contact-form">
+        <div><textarea placeholder="Enter Message"></textarea></div>
+        <div><input type="text" placeholder="Enter your name"></div>
+        <div><input type="text" placeholder="Enter email address"></div>
+        <div><input type="text" placeholder="Enter Subject"></div>
+        <div>
+            <div>
+                <p>SEND MESSAGE</p>
+            </div>
+            <div><img src="Assets/arrow-right-solid.svg" alt="" width="18"></div>
+        </div>
+    </section>
+    <br><br><br>
+    <!-- aside -->
+    <aside id="contact-medium">
+        <div>
+            <div><img src="Assets/home-solid.svg" width="30"></div>
+            <div>
+                <h3>Buttonwood, California.</h3>
+                <p>Rosemead, CA 91770</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="Assets/mobile-alt-solid.svg" width="25"></div>
+            <div>
+                <h3>00&nbsp;(440)&nbsp;9865&nbsp;562</h3>
+                <p>Mon to Fri 9am to 6am</p>
+            </div>
+        </div>
+        <div>
+            <div><img src="Assets/envelope-regular.svg" width="25"></div>
+            <div>
+                <h3>support@colorlib.com</h3>
+                <p>Send us your query anytime!</p>
+            </div>
+        </div>
+    </aside>
+    <footer id="footer_part">
+        <section id="footer_section">
+            <div id="parent_footer1">
+                <h2 class="footer_heading">About Agency</h2>
+                <p class="footer_para">The World has become so fast paced that people don't want to stand by reading a
+                    page of information, they would much rather look at a presentation and understand the message.It has
+                    come to a point where images. </p>
+            </div>
+            <div id="parent_footer2">
+                <h2 class="footer_heading">Navigation Links</h2>
+                <div id="links_footerdiv">
+                    <a href="">Home</a>
+                    <a href="">team</a>
+                    <a href="">Features</a>
+                    <a href="">Pricing</a>
+                    <a href="">Services</a>
+                    <a href="">Blog</a>
+                    <a href="">Portfolio</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+            <div id="parent_footer3">
+                <h2 class="footer_heading">Newsletter</h2>
+                <p class="footer_para">Heaven fruitful doesn't over lesser in days. Appear creeping seasons deve behold
+                    bearing days open</p>
+                <div><input type="email" name="" id="email" placeholder="Email Address"><button type="submit"
+                        id="button_submit_footer"><span><i class="far fa-paper-plane fa-1x"></i></span></button></div>
+                <p id="submitting"></p>
+            </div>
+            <div id="parent_footer4">
+                <h2 class="footer_heading">Instafeed</h2>
+                <div id="img_footerdiv">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_1.png.pagespeed.ic.pKJOiF18o9.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_2.png.pagespeed.ic.9y9oc3nf7h.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_3.png.pagespeed.ic.tpLB1vMRwU.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_4.png.pagespeed.ic.rQv_K-VUpf.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_5.png.pagespeed.ic.pUDQA0kQXP.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_6.png.pagespeed.ic.7tdWmNvV2S.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_7.png.pagespeed.ic.3McTHMBc3m.webp"
+                        alt="">
+                    <img src="https://preview.colorlib.com/theme/tourbi/img/footer_img/xfooter_8.png.pagespeed.ic.hD22gB6aTo.webp"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <hr style="margin-top: 2em;">
+        <div id="end_div_footer">
+            <p id="footer_para">Copyright ©2022 All rights reserved | This template is made with <a
+                    style="color: #7a7a7a;" href=""><i class="far fa-heart"></i></a>
+                by <a id="colirib_a" href="">Colorib</a>
+            </p>
+            <div id="fab_icon_footer">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fas fa-globe"></i></a>
+                <a href=""><i class="fab fa-behance"></i></a>
+            </div>
+
+        </div>
+
+
+    </footer>
+
 </body>
+<script src="https://kit.fontawesome.com/1166b63301.js" crossorigin="anonymous"></script>
+
+<script>
+    var button = document.getElementById("button_submit_footer").addEventListener("click", submit_mail)
+
+    function submit_mail() {
+        var p = document.querySelector("#submitting")
+        p.textContent = "Submitting";
+        p.style.color = "red"
+    }
+
+    const btn = document.getElementById('menu-btn')
+    const nav = document.getElementById('menu')
+
+    function navToggle() {
+        btn.classList.toggle('open')
+        nav.classList.toggle('hidden')
+        document.body.classList.toggle('no-scroll')
+    }
+
+    btn.addEventListener('click', navToggle)
+</script>
+
 </html>
